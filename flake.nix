@@ -13,8 +13,8 @@
         shell = pkgs.zsh;
       };
       packages.x86_64-linux.default = pkgs.runCommand "hm" { } ''
-      ls /bin | grep nix
-      ls /bin | grep sudo
+      echo -e "======ls=====\n"
+      ls /bin 
       '';
     };
 }
