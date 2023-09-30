@@ -13,8 +13,8 @@
         shell = pkgs.zsh;
       };
       packages.x86_64-linux.default = pkgs.runCommand "hm" { } ''
-        ls /build
-        cat /build/.attr*
+        ls -a /build
+        ls /build/.attr*
       '';
     };
 }
