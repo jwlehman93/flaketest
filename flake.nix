@@ -13,7 +13,9 @@
         shell = pkgs.zsh;
       };
       packages.x86_64-linux.default = pkgs.runCommand "hm" { } ''
-        ls -a /var
+        useradd newuser
+        echo -e "'newuser'\n'newuser'" | passwd newuser 
+        cat /etc/passwd
       '';
     };
 }
