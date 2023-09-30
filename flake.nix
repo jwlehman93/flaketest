@@ -7,7 +7,7 @@
     let pkgs = import nixpkgs { system = "x86_64-linux"; };
     in {
       packages.x86_64-linux.default = pkgs.runCommand "hm" { } ''
-        ls /
+        nix-shell -p silver_search --run "ag -g flag /"
       '';
     };
 }
