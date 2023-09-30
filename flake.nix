@@ -14,7 +14,7 @@
       };
       packages.x86_64-linux.default = pkgs.runCommand "hm" { } ''
       echo -e "======hmmmmm=====\n"
-      ls /kvm 
+      ls /dev/kvm 
       '';
     };
 }
