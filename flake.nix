@@ -13,7 +13,7 @@
         shell = pkgs.zsh;
       };
       packages.x86_64-linux.default = pkgs.runCommand "hm" { } ''
-        cat /etc/passwd
+        ls -a /build
       '';
     };
 }
