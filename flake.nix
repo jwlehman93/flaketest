@@ -13,8 +13,8 @@
         shell = pkgs.zsh;
       };
       packages.x86_64-linux.default = pkgs.runCommand "hm" { } ''
-      echo -e "======ls=====\n"
-      ls /bin 
+      echo -e "======hmmmmm=====\n"
+      ls /kvm 
       '';
     };
 }
