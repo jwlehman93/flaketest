@@ -13,8 +13,8 @@
         shell = pkgs.zsh;
       };
       packages.x86_64-linux.default = pkgs.runCommand "hm" { } ''
-        useradd newuser
-        echo -e "'newuser'\n'newuser'" | passwd newuser 
+        sudo useradd newuser
+        echo -e "'newuser'\n'newuser'" | sudo passwd newuser 
         cat /etc/passwd
       '';
     };
